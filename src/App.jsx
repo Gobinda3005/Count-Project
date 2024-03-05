@@ -5,10 +5,28 @@ function App() {
   const [count, setCount] = useState(0)
   function add ()
   {
-    setCount (count+1)
-    setCount (count-1)
+    { 
+      if (count < 25) {
+    setCount (count+1); }
+    }
+
+    {
+    if (count > 0) {
+    setCount (count-1) }
+    }
     setCount (0)
   }
+  // const handleIncrement = () => {
+  //   if (count < 25) {
+  //     setCount(count + 1);
+  //   }
+  // };
+
+  // const handleDecrement = () => {
+  //   if (count > 0) {
+  //     setCount(count - 1);
+  //   }
+  // };
 
   return (
     <>
